@@ -30,9 +30,9 @@ This document will be a living guide for how I accomplished the audit (and how I
 
 For one customer, I took a 5 min test suite to 1:10, a 75% reduction in speed, thanks to VCR. I'll show you exactly how I did this.
 
-For another customer, I got a ~20min test suite to ~11min, but it failed when getting pushed to CircleCI, and then the underlying issue (some _really_ slow DB queries) got partially fixed, so I'm auditing the app a second time, expecting to find a different set of issues.
+For another customer, I got a ~20min test suite to ~11min, but it failed when getting pushed to CircleCI, and then the underlying issue (some _really_ slow DB queries) got partially fixed, so I'm auditing the app a second time, expecting to find a different set of issues. (Update, CircleCI is happy, tests are now ten minutes, with another minute or two coming off in the next PR)
 
-For the third customer, the app is huge, complicated, and the tests take so long they don't run the whole suite on a regular laptop - it's delegated to CircleCI, and test runs eat up a lot of credits and time. 
+For the third customer, the app is huge, complicated, and the tests take so long they don't run the whole suite on a regular laptop - it's delegated to CircleCI, and test runs are parallelized, but eat up credits and time. 
 
 I'm going to offer all of my lessons learned as this finished guide soon. Preorder the guide for $49, or an upgrade package that will come with at least a 1-hour call, where we talk about your questions, we can screenshare through your codebase, etc. Any purchaser gets added to my slack group, and you can ping me with questions at any time.
 
@@ -42,9 +42,11 @@ I'm offering this on pre-order, because I've not finished the guide yet! Once th
 
 👉 [Preorder: The guide + a one-hour zoom call for $249](https://buy.stripe.com/8wMaF39of2NVfAcdQR)
 
-Early adapters will obviously work more closely with me, and vice versa - as I/my written instructions create additional value, I'll raise my rates.
+Early adapters will obviously work more closely with me, and vice versa - as I/my written instructions create additional value, I'll raise my rates. Ever purchaser gets an invite to Slack and a `test-performance` channel.
 
 If you'd like a student discount, email me! I'll hook you up!
+
+---------------------
 
 # The Guide
 
@@ -58,7 +60,7 @@ Both of those guides are extensive, and incredible collections of learning and k
 
 ## Benchmarking & Profiling
 
-Step 1 is always "benchmark and profile". 
+Step 1 is always "benchmark and profile", with a sense of trying to build your intutions about where to investigate next.
 
 Ideally, I use a command like:
 
@@ -73,19 +75,21 @@ The `time` command is easy - look it up on your machine, or use [TLDR](https://g
 
 `rails test`/`rspec` run the test suite
 
-`--profile 40` `rspec` has this `profile` functionality already included. It prints out diagnostic information about the slowest `n` tests, defaults to 10, I usually look at the slowest 40. There's a minitest gem for enabling profiling in minitest. 
+`--profile 40` `rspec` has this `profile` functionality already included. It prints out diagnostic information about the slowest `n` tests, defaults to 10, I usually look at the slowest 40. There's a [minitest-profile gem](https://github.com/nmeans/minitest-profile) for enabling profiling in `minitest`. 
 
-## Get the app running locally
+### Get the app running locally
 
-Oh man, this was a doozy. I ran into many issues. Many were tiny, required just a few Google queries to get through. Others were heftier.
+Oh man, this was a doozy. I ran into many issues across all three applications. Many were tiny, required just a few Google queries to get through. Others were heftier, took some pairing with the CTO to get through. 
 
-We're used to something like:
+The ideal workflow is something like:
 
 ```
 $ git clone <company_app>
 $ cd <company_app>
 $ bundle install
-$ bin/rails rspec
+$ bin/setup // run setup stuff, install all the non-gem dependencies
+$ bin/rails rspec 
+// run the tests
 ```
 
 It's often quite a bit more. I actually wanna build a service that times how long from `git clone` to tests being done running _and passing_, or the app running locally and DB properly seeded, or both. 
@@ -94,12 +98,12 @@ For example:
 
 - xcode-select commandline tools. Reinstalling fixes many things that get inexplicably broken.
 - Elasticsearch can be a PITA to get running w/Homebrew
-- MySQL can be a doozy to get various flavors of databases connected to the app. 
+- MySQL can be a doozy to get various flavors of databases connected to the app.
 - services are not trivial. (mongdb, mysql/mysqld, elasticsearch, running them in a container, or locally, or via homebrew, or all of the above, credentials/ports so all services can connect appropriately.)
 
 There are lots of services that developers can install on their machines.
 
-More on this to come someday.
+More on this later.
 
 ## After you've run some profiling/benchmarks
 
@@ -129,9 +133,8 @@ That's the output of running a sample little test I built. I just created an emp
 require 'rails_helper'
 
 describe String do
-  it "should be capitalizable" do
-    string = "josh"
-    expect(string.capitalize).to eq("Josh")
+  it "is capitalizable" do
+    expect("josh".capitalize).to eq("Josh")
   end
 end
 ```
@@ -150,12 +153,12 @@ Finished in 1.77 seconds (files took 1 minute 40.54 seconds to load)
 bin/rspec spec/models/string_spec.rb  0.25s user 0.14s system 0% cpu 1:44.37 total
 ```
 
-There's a few reasons this high file load time causes problems, some obvious, some subtle. All there is to say is it's worth fixing. It's a big, complicated application, so I'm just capturing my thoughts...
+There's a few reasons this high file load time causes problems, some obvious, some subtle. All there is to say is it's possibly worth fixing. It's a big, complicated application, so I'm just capturing my thoughts...
 
 Next, lets use two very sophisticated benchmarking tools to explore this ~2min file load time:
 
 1. commenting things out
-2. Strategic shotgunning of well-formatted `puts` statements 
+2. Strategic shotgunning of well-formatted `puts` statements throughout the code.
 
 See, first, I commented out pretty much everything in `rails_helper`, to try to get the file load time down. Where might you start commenting things out, to see what is causing the slowdown?
 
@@ -199,12 +202,26 @@ I'm running this a few times to see how much variability there is on the file lo
 
 ```ruby
 puts "TIMING: doing_such_and_such"
-puts "TIMING: DB Cleaner"
+puts "TIMING: running DB Cleaner"
 puts "TIMING: setting up users"
 puts "TIMING: connection.execute"
 ```
 
-etc. I stick these throughout `rails_helper` and `application.rb`, various helper files, etc, to see where things are moving "quickly" and "slowly". This is _extremely_ imprecise - if I wanted to be fancy, I could create a little timer class, and then do fancy calls that time exactly how long has elapsed between calls, and could order by the longest elapsed time between calls. Maybe next time.
+etc. I stick these throughout `rails_helper` and `application.rb`, various helper files, etc, to see where things are moving "quickly" and "slowly". This is _extremely_ imprecise - if I wanted to be fancy, I could create a little timer class, and then do fancy calls that time exactly how long has elapsed between calls, and could order by the longest elapsed time between calls. 
+
+As I narrow down what seems suspicious, I do just that. For example, for one company, most of the times a certain method was called, it ran in less than 1/10th of a second. Then, every now and again, it took a few minutes. I put more detailed timing around this to investigate. Here's an example:
+
+```ruby
+def sometimes_really_slow_method()
+  time = Time.now
+  DB.execute() # sometimes very slow operation
+  puts "slow_method took #{(Time.now - time).round(2)} seconds"
+  puts "was called from:"
+  puts caller.reject {|l| l.include?('/gems')}.join("\n") 
+  # shows a stack trace to see where this method was called from, but
+  # removes most of the "noise" of said stack trace.
+end
+```
 
 Anyway, in iTerm, i can then `ctrl-f` for `TIMING` and have my statements highlighted as they come out:
 
@@ -213,6 +230,31 @@ Anyway, in iTerm, i can then `ctrl-f` for `TIMING` and have my statements highli
 This means that even when deprecation warnings and logs are being printed out, by just watching the presence of those little highlighted boxes popping up, I can get a sense of how long various components of the application/tests take to process. I'm aiming to shave _minutes_ from the test time, not milliseconds.
 
 
+Let us see where the times are the worst. We know the tests take ~20 min, so lets run, successively:
+
+```
+time b rspec spec/models 
+=> 17 seconds, 10 sec file load time
+
+time b rspec spec/requests
+=> 2.2 seconds, 5 second load time
+
+time b rspec spec/services
+=> 9 min 30 seconds
+```
+
+I kept poking around, running sub-directories to see where the time is going, I narrowed it down to just two or three files, and then identified what within the files was causing the delays.
+
+I had a quick call with the CTO, who built this entire app and is an extremely prolific and effective builder of product. 
+
+I showed him my findings, localized to the two lines of code (in each file) that caused the delays, but expressed that I wasn't sure how to resolve it. He uttered a single sentence, I changed two lines of code, and:
+
+```
+time b rspec spec/services
+=> 1 minute 16 seconds (files took 3.98 seconds to load)
+```
+
+A smashing success. Pattern matching this particular fix across other instances of the code base (three in all) took the tests from 20 minutes to 10 minutes.
 
 
 
@@ -223,7 +265,15 @@ This means that even when deprecation warnings and logs are being printed out, b
 - [Testing Rails (by ThoughtBot)](https://gumroad.com/l/testing-rails)
 - [Rails Testing: Files Took ‘x’ Seconds To Load](https://medium.brianemory.com/rails-testing-files-took-x-seconds-to-load-c4cbd4fa53a9)
 - [How Fast is Spring?](https://spring.io/blog/2018/12/12/how-fast-is-spring)
-- []()
+
+
+## CircleCI
+
+For the largest/most complicated codebase I'm working on, since the tests are not ever run locally, the pain-point was the number of CircleCI credits every test run took. 
+
+The tests are parallelized across many, many different
+
+
 
 # Conclusion
 
