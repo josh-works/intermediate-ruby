@@ -8,7 +8,7 @@ categories: [apprenticeship_program]
 tags: [learning, training, 2-sigma-problem]
 permalink: building-an-apprenticeship-program
 image: /images/title_image.jpg
-github_issue_id: 10
+issue_id: 10
 ---
 
 

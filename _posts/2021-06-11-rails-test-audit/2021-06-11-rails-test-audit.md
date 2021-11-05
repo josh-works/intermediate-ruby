@@ -8,7 +8,7 @@ categories: [programming]
 tags: [consulting, performance_optimization, ruby, rails]
 permalink: how-to-audit-and-improve-your-ruby-rails-test-suite
 image: /images/title_image.jpg
-github_issue_id: 8
+issue_id: 8
 ---
 
 _Author's note: This is a very work-in-progress guide, more of a scratchpad than finished page/guide/product/"thing". Please keep that in mind as you read! Stick questions in comments below, or add a comment to this twitter thread: [](https://twitter.com/josh-works/)_
