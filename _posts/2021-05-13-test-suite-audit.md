@@ -14,23 +14,25 @@ github_issue_id: 7
 
 ## Background
 
-Yesterday (Wednesday, May 12th) I was talking with a very experienced engineer about their test harness, and how (un)happy they were with how long it took the test harness to run.
+Yesterday (Wednesday, May 12th, 2021) I was talking with a very experienced engineer about their test harness, and how (un)happy they were with how long it took the test harness to run. I said 
 
-He suggested I just ask Twitter for their applications, get practice on a lot of different applications. It is a _brilliant_ suggestion. And thus this page was born.
+> hm, I wonder if I could spend an hour or two on it and get it running faster. 
 
-_update from 2023: As you might not be surprised to hear, the prices have gone up_
+He can't be adding random people to his client's repositories, so he suggested I just ask Twitter for _their_ RoR applications, to get practice on a lot of different applications. It is a _brilliant_ suggestion. And thus this page was born.
+
+_update from the future: As you might not be surprised to hear, I got some customers, and prices have gone up!_
 
 ---------------------
 
 I'm a bit of an obsessive about how long it takes to run tests.
 
-Slow tests have such a cost to you, your team, and your company.
+Slow tests have such a cost to you, your team, and your company. (And have cost _me_, _my_ teams, and the companies I've worked for lots of time, hassle, and payroll)
 
 I've been on teams where the tests take 30 seconds, and I've been on teams where the tests take 45 minutes.
 
 I'm not going to engage in _shaming_ anyone for having a slow test suite. I'd like to simply teach them how to profile/benchmark their own tests, and then make some tactical, selective fixes, and immediately get faster tests!
 
-_Just want to get my `Speed Up Your Tests` guide when it's done? Drop your email below 👇_
+_I'm going to write a companion guide, documenting as much of what I can document as I can. Want to get the`Speed Up Your RoR Tests` guide when it's done? Drop your email below 👇. [here's a preview](https://www.intermediateruby.com/how-to-audit-and-improve-your-ruby-rails-test-suite)_
 
 <script async data-uid="518bab5f60" src="https://josh-thompson.ck.page/518bab5f60/index.js"></script>
 
@@ -48,7 +50,7 @@ I'd like to help you, and get some practice doing this on a wide variety of appl
 
 So, hit the "buy now" button to book an audit. Once payment is complete, I'll reach out via email, and we'll get things going!
 
-I can't wait to get started!
+I think it'll be a good bit of fun. 😀
 
 ## Purchase Now
 
@@ -103,9 +105,9 @@ I can't wait to get started!
 })();
 </script>
 
-## Enterprise Option
+## Enterprise Options
 
-There's other working arrangements, but it's best to funnel through the $4900 audit and profile option, and as part of that explore other options.
+If your company is too big/process heavy to support this exact mechanism (an easy $4900 charge + github access), there's other working arrangements we can explore, but it's still best to funnel through the $4900 audit and profile option, and *then* explore additional work arrangements
 
 --------------------
 
@@ -153,7 +155,7 @@ Tl;Dr; I'm basically giving this service away.
 
 ### I've got a super slow test suite, and I'd love for you to guaranteed that it'll be a lot faster when you're done
 
-I cannot guarantee it, but I can promise that you (and I!) will learn a lot through the process. 
+I cannot guarantee it, but I can promise that you (and I!) will learn a lot through the process. [here's some of what I learned and achieved in the past](https://www.intermediateruby.com/how-to-audit-and-improve-your-ruby-rails-test-suite)
 
 ### Can I get that guide you're going to write when it's done?
 
