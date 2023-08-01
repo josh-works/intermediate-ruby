@@ -11,11 +11,14 @@ image: /images/title_image.jpg
 github_issue_id: 7
 ---
 
+
 ## Background
 
 Yesterday (Wednesday, May 12th) I was talking with a very experienced engineer about their test harness, and how (un)happy they were with how long it took the test harness to run.
 
 He suggested I just ask Twitter for their applications, get practice on a lot of different applications. It is a _brilliant_ suggestion. And thus this page was born.
+
+_update from 2023: As you might not be surprised to hear, the prices have gone up_
 
 ---------------------
 
@@ -37,9 +40,9 @@ Because I'd like to get exposure to many different test suites on different appl
 
 Critically, however, _I might not be able to make your tests faster_, but I'll certainly try, and I'll give you great starting points that your team can continue to work on. 
 
-If your tests take 45 minutes, I don't know that they'll ever take just one minute, but think of how nice it would be to cut that time in half.
+If your tests take 45 minutes, I don't know that they'll ever take just one minute, but think of how nice it would be to cut that time by twenty or thirty minutes!
 
-If your tests take 5 minutes, how nice would it be if they took just 2.5 minutes?
+If your tests take 5 minutes, how nice would it be if they took just 1.5 minutes?
 
 I'd like to help you, and get some practice doing this on a wide variety of applications, so I can build a guide to help other engineers figure this all out for themselves!
 
@@ -58,7 +61,7 @@ I can't wait to get started!
     id="checkout-button-sku_JTcq1iheI2La2N"
     role="link"
     type="button">
-    Buy Now ($1000)
+    Buy Now ($4900)
   </button>
 </div>
 <div id="error-message"></div>
@@ -102,55 +105,55 @@ I can't wait to get started!
 
 ## Enterprise Option
 
-If you want to just buy my time to solve this problem for your organization, I'm happy to do so. We'll need to talk about it more, so book a roadmapping call ($150) below:
-
-**Roadmapping call: [calendly.com/joshthompson/roadmapping ($150)](https://calendly.com/joshthompson/roadmapping)**
+There's other working arrangements, but it's best to funnel through the $4900 audit and profile option, and as part of that explore other options.
 
 --------------------
 
 ## FAQ
 
-### This seems too good to be true. $1000 for faster tests?
+### This seems too good to be true. $4900 for faster tests, and all that earned-back confidence and productivity?
 
-Well, it really could be too good to be true. I'm looking for about five of these, at which point I'll disable to purchase button, and then work on just those 5 apps, then I'll write part 1 of the guide, and iterate for round 2.
+Well, it really could be too good to be true. I only have room to do a few of these at a time, and often-enough the audit/fix turns into additional work, further limiting my availability for other customers.
+
+You're normally paying that much every week for each of your engineers who are currently making pull requests, running tests, and overall trying to build your product as fast as possible - outsource the stress, project management, pointing, and stress for making your tests faster to me, who _loves_ making things faster.
+
+I'll share my learnings with your engineers, so some of them might keep the performance mindset going, even after my work, and this will be an investment that keeps on generating returns
 
 
 
 ### What makes for a "good fit" for this service?
 
-- **Your tests are in Ruby/Rails** If you've got a slow Elixir test suite, or whatever, that's not what I'm here to fix. So, I'd like to work on _just_ Ruby and/or Rails test harnesses.
-- **The repository is public _or_ you can add me to the repository while I'm working on your tests.** If you've got a really complicated NDA process, or the words "Would Legal approve of this?" have crossed your mind, it's probably not a good fit.
-- **You're willing to talk with me about it a bit** I might have some questions, and might open up a GitHub issue, or DM you in Slack|Twitter|Discord|whatever
-- **You're not obsessing too much about this** If you're really nervous about parting with your money and helping me with this experiment, maybe it's not a good fit right now. Once I've iterated on this a few times, it'll be a much more robust service/offering, and _then_ we should talk! Punch your email in below, and you'll get updates as I go!
+- **Your tests are in Ruby/Rails** I'd like to work on _just_ Ruby and/or Rails test suites. I don't want to work on elixir/javascript/java/whatever codebases.
+- **you can add me to the repository where your tests live.** We can get a SoW and NDA in place easily enough, but ultimately the work will look like adding me to the necessary github repository and CircleCI, and I'll take it from there. 
+- **You're willing to talk with me about it a bit** I might have some questions, and might open up a GitHub issue, or DM you in Slack|Twitter|Discord|whatever. 
+- **You're not obsessing too much about this** If you're really nervous about parting with your money need me to turn your payroll into a few million dollars of valuation, maybe it's not a good fit right now. Once I've iterated on this a few times, it'll be a much more robust service/offering, and _then_ we should talk! Punch your email in below, and you'll get updates as I go!
 
 <script async data-uid="518bab5f60" src="https://josh-thompson.ck.page/518bab5f60/index.js"></script>
 
 
 ### What if you don't make my tests go faster?
 
-I'll give you you're money back!
+I'll give you half of the money back! (but not all of it, of course. My time has value)
 
-### $1000? Isn't that a little cheap?
+### $4900? Isn't that a little cheap?
 
-It is! I don't quite want to do this for free, but I want to get a lot of exposure to this problem, across different organizations/applications, to see what patterns emerge. I'm doing investing this time, rather than trying to make a lot of money off this. (Though, as I build skills and practice, I'll keep offering this service, at a dramatically increased cost.)
+It is! A normal full-time engineer might cost you $15-25k/month, and it's time consuming for everyone to find and hire that person. I offer dramatically reduced effort, without displacing any of the work you/your team already has on deck. 
 
-### $1000? Isn't that a little expensive?
+I don't think I'll leave the cost so low for long, and it's been even lower in the past. 
 
-The average gainfully employed software developer costs the company in the ballpark of $1k/workday. Buying this service at such a low cost is the kind of thing that will get you accolades at work by the people who run the place.
+### $4900? Isn't that a little expensive?
 
-If you're not sure you'll get celebrated for hiring me, shoot me a note and I'll help you figure out how to come out of this looking like a hero! 
+The average full-time software developer costs the company in the ballpark of $15-20k/mo, and then needs to be interviewed, hired, onboarded. All of that costs money, of course, and lots of time.
+
+Buying this productized service at such a low cost is the kind of thing that you'll record as 'an easy win for the quarter'. Every engineer will be happy to have faster tests, _and_ to have not gotten performance work dropped in their lap at an inconvenient time. 
+
+I have an odd interest in performance work, and find it satisfying, and you get access to all the assorted experience and knowledge I've gained, doing this for many different companies/codebases.
 
 Tl;Dr; I'm basically giving this service away.
 
 ### I've got a super slow test suite, and I'd love for you to guaranteed that it'll be a lot faster when you're done
 
 I cannot guarantee it, but I can promise that you (and I!) will learn a lot through the process. 
-
-### I want this to happen quickly, and I'm willing to pay the going rate for this kind of thing
-
-Great! I'll plan on committing a full week, minimum. Let's set up a quick call to discuss timing, as I don't currently have time to work full-time on a client project. I don't bill by the hour (or the day) but we'd be looking at something north of $4,000. 
-
-Book that roadmapping call here: [calendly.com/joshthompson/roadmapping ($150)](https://calendly.com/joshthompson/roadmapping)
 
 ### Can I get that guide you're going to write when it's done?
 
@@ -164,4 +167,4 @@ Drop your email below, and I'll notify you when this project is done!
 
 ### I've got more questions. What to do?
 
-Leave a comment below. Hit me up on twitter. Email me at `josh@intermediateruby.com`. You know the drill.
+Leave a comment below. Hit me up on twitter. Email me at `josh@intermediateruby.com`.
