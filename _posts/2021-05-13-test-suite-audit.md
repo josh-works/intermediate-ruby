@@ -14,11 +14,17 @@ github_issue_id: 7
 
 ## Background
 
-Yesterday (Wednesday, May 12th, 2021) I was talking with a very experienced engineer about their test harness, and how (un)happy they were with how long it took the test harness to run. I said 
+A few weeks ago I was talking with a very experienced engineer about their test harness, and how (un)happy they were with how long it took the test harness to run. I said 
 
 > hm, I wonder if I could spend an hour or two on it and get it running faster. 
 
-He can't be adding random people to his client's repositories, so he suggested I just ask Twitter for _their_ RoR applications, to get practice on a lot of different applications. It is a _brilliant_ suggestion. And thus this page was born.
+He can't be adding random people to his client's repositories, so he suggested I just ask Twitter for _their_ RoR applications, to get practice on a lot of different applications. 
+
+So I tweeted some thing: 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Strongly recommend you charge at least $1,000 to signal you&#39;re serious and know what you&#39;re doing. <br><br>&quot;I gave access to our source code to an extremely cheap contractor&quot; is not something most folks want to say to their boss.</p>&mdash; Ben Orenstein (@r00k) <a href="https://twitter.com/r00k/status/1393124330461143042?ref_src=twsrc%5Etfw">May 14, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+It was a great suggestion. And thus this page was born.
 
 _update from the future: As you might not be surprised to hear, I got some customers, and prices have gone up!_
 

@@ -9,6 +9,7 @@ tags: [learning, training, 2-sigma-problem]
 permalink: building-an-apprenticeship-program
 image: /images/title_image.jpg
 issue_id: 10
+published: false
 ---
 
 

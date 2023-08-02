@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Zero to Minimum-Viable-Jekyll-Website"
-published: true
+published: false
 description: "A flexible-but-battle-tested field-guide to figuring out how to create a professional Jekyll website in minutes."
 permalink: /zero-to-mvp-jekyll-website
 image: ""

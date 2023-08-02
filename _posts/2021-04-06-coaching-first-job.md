@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Trying to get your first job as a software developer?"
-published: true
+published: false
 date: 2021-04-06 06:00:00 -0700
 description: "Coaching to get your first software development job"
 permalink: /coaching-with-josh-for-your-first-engineering-job

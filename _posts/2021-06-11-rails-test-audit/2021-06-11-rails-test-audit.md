@@ -21,7 +21,7 @@ I offered to do this for $100. 🤦‍♀️, quickly upgraded it to $1000 after
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Strongly recommend you charge at least $1,000 to signal you&#39;re serious and know what you&#39;re doing. <br><br>&quot;I gave access to our source code to an extremely cheap contractor&quot; is not something most folks want to say to their boss.</p>&mdash; Ben Orenstein (@r00k) <a href="https://twitter.com/r00k/status/1393124330461143042?ref_src=twsrc%5Etfw">May 14, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
 
-Since then, I've had three customers! It's been an absolute blast, and I've learned a ton. (For example, getting an entire app running locally, from `git clone` to `rails test` and having all passing tests _never_ takes just a few minutes). I'll charge substantially more next time around. 
+Since then, I've had a handful of customers! It's been an absolute blast, and I've learned a ton. (For example, getting an entire app running locally, from `git clone` to `rails test` and having all passing tests rarely takes just a few minutes). I'll charge substantially more next time around. 
 
 This document will be a living guide for how I accomplished the audit (and how I'll conduct future audits) and what steps I've taken to do two things:
 
