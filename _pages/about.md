@@ -39,7 +39,7 @@ On the flip side, There's many developers who feel like they're "solid mid-level
 
 I hope to be helpful to these populations as well.
 
-So, here's a way to start writing more code, and at a higher degree of skill:
+So, here's a way to start writing more code, and at a higher degree of skill. I think it's critical to 'explore widely' and then pick whatever seems most interesting. Below, you'll find six different projects that can help you _write a lot of code_, quickly, in a way that will feel like good practice. I'm proud of all of it, in different ways.
 
 ### 1. (Re)implement `Fútbol`
 
@@ -75,15 +75,8 @@ A while back, I wanted to build a little web scraping tool. I wanted to scrape t
 
 I ended up building [https://random-hn-blog.herokuapp.com/](https://random-hn-blog.herokuapp.com/) a simple web app which serves a random URL pulled from the top-level comments of that particular HN thread. 
 
-### 4. First-time Open-Source Contribution - A Guide
 
-Replicate everything about creating [this pull](https://github.com/jekyll/jekyll/pull/8167) request, after reading [this issue](https://github.com/jekyll/jekyll/issues/7973). 
-
-👉 [Jekyll Bug Fix with Matt (a detailed code-along)](https://www.intermediateruby.com/make-oss-contributions-part-0-introduction)
-
-
-
-## Podcasts and Talks
+### 4. Podcasts and Talks and Presentations
 
 - ["Junior" Developers are the Solution to Many of Your Problems (RailsConf 2021)](https://josh.works/railsconf)
 
@@ -92,7 +85,7 @@ Replicate everything about creating [this pull](https://github.com/jekyll/jekyll
 - [Move Slow and Improve Things (Boulder Ruby Meetup)](https://josh.works/boulder_ruby_group). 
 
 
-At my best, I create value lots of value.  
+At minimum, I inject a little novelty into the world around me, and maybe 'do useful/helpful things' along the way. 😁
 
 <script async data-uid="5b13b420e3" src="https://josh-thompson.ck.page/5b13b420e3/index.js"></script>
 
