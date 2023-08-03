@@ -41,6 +41,15 @@ I hope to be helpful to these populations as well.
 
 So, here's a way to start writing more code, and at a higher degree of skill. I think it's critical to 'explore widely' and then pick whatever seems most interesting. Below, you'll find six different projects that can help you _write a lot of code_, quickly, in a way that will feel like good practice. I'm proud of all of it, in different ways.
 
+### 1. First-time Open-Source Contribution - A Guide
+
+This four-part, carefully-edited/annotated/master-based learning[^mastery-based] walk-through
+
+Replicate everything about creating [this pull](https://github.com/jekyll/jekyll/pull/8167) request, after reading [this issue](https://github.com/jekyll/jekyll/issues/7973). 
+
+👉 [Jekyll Bug Fix with Matt (a detailed code-along)](https://www.intermediateruby.com/make-oss-contributions-part-0-introduction)
+
+
 ### 1. (Re)implement `Fútbol`
 
 Click through to the repository, skim the readme, then start looking at some of the classes. 
@@ -88,5 +97,18 @@ I ended up building [https://random-hn-blog.herokuapp.com/](https://random-hn-bl
 At minimum, I inject a little novelty into the world around me, and maybe 'do useful/helpful things' along the way. 😁
 
 <script async data-uid="5b13b420e3" src="https://josh-thompson.ck.page/5b13b420e3/index.js"></script>
+
+
+## Footnotes
+
+[^mastery-based]: I care _more than most people I know_ about 'pedagogy and expert knowledge transfer', and not because I've found learning to be effortless and easy my whole life. For example, I gave a presentation about a paper from 1984, talking about how (essentially) TWO SPECIFIC INTERVENTIONS can cause any student to achieve 98% results!!! [https://josh.works/2-sigma-problem](https://josh.works/2-sigma-problem) The paper is really interesting, and I'd recommend just clicking through [the slideshow](https://josh.works/2-sigma-problem#slideshow-and-presentation-on-applying-the-2-sigma-problem-to-a-software-development-training-program) I based a talk off of. I don't have the recording of the talk, but the slideshow is interesting.
+
+    That's why people say things like this:
+
+    > The time that I’ve spent working one-on-one with Josh has been, without a doubt, the most valuable time I’ve spent individually with anyone at on my journey to becoming a skilled software developer.
+    > 
+    > Josh combines his unrivaled work ethic and technical aptitude with deep, genuine empathy and self-awareness that is unique and has made him an indispensable ally.
+
+    
 
 
