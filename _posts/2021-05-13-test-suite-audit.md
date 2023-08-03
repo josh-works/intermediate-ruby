@@ -44,7 +44,7 @@ _I'm going to write a companion guide, documenting as much of what I can documen
 
 ## What you'll get
 
-Because I'd like to get exposure to many different test suites on different applications, and get practice with profiling them and making the them faster, I'd like to do this on _your_ application! 
+I'd like to do this 'Rails app test suite benchmark/profile/optimize on _your_ application! 
 
 Critically, however, _I might not be able to make your tests faster_, but I'll certainly try, and I'll give you great starting points that your team can continue to work on. 
 
@@ -111,9 +111,6 @@ I think it'll be a good bit of fun. 😀
 })();
 </script>
 
-## Enterprise Options
-
-If your company is too big/process heavy to support this exact mechanism (an easy $4900 charge + github access), there's other working arrangements we can explore, but it's still best to funnel through the $4900 audit and profile option, and *then* explore additional work arrangements
 
 --------------------
 
@@ -143,9 +140,18 @@ I'll share my learnings with your engineers, so some of them might keep the perf
 
 I'll give you half of the money back! (but not all of it, of course. My time has value)
 
-### $4900? Isn't that a little cheap?
 
-It is! A normal full-time engineer might cost you $15-25k/month, and it's time consuming for everyone to find and hire that person. I offer dramatically reduced effort, without displacing any of the work you/your team already has on deck. 
+## Could we also hire you for other development work?
+
+I'd sorta rather not. But maybe! 
+
+If your company is too big/process heavy to support this exact mechanism (an easy $4900 charge + github access), there's other working arrangements we can explore, but it's still best to funnel through the $4900 audit and profile option, and *then* explore if additional work arrangements make sense.
+
+### $4900? Isn't that a little cheap? 
+
+It is! A normal full-time engineer might cost you $15-25k/month, and can be tens of thousands of dollars spent before their first useful PR, and it's time consuming for everyone to find and hire that person. 
+
+Those hires can be REALLY great, but I offer dramatically reduced effort/cost, with the upside of  without displacing any of the work you/your team already has on deck. 
 
 I don't think I'll leave the cost so low for long, and it's been even lower in the past. 
 
