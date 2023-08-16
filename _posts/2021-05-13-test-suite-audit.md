@@ -116,58 +116,40 @@ I think it'll be a good bit of fun. 😀
 
 ## FAQ
 
-### This seems too good to be true. $4900 for faster tests, and all that earned-back confidence and productivity?
-
-Well, it really could be too good to be true. I only have room to do a few of these at a time, and often-enough the audit/fix turns into additional work, further limiting my availability for other customers.
-
-You're normally paying that much every week for each of your engineers who are currently making pull requests, running tests, and overall trying to build your product as fast as possible - outsource the stress, project management, pointing, and stress for making your tests faster to me, who _loves_ making things faster.
-
-I'll share my learnings with your engineers, so some of them might keep the performance mindset going, even after my work, and this will be an investment that keeps on generating returns
-
-
-
-### What makes for a "good fit" for this service?
-
-- **Your tests are in Ruby/Rails** I'd like to work on _just_ Ruby and/or Rails test suites. I don't want to work on elixir/javascript/java/whatever codebases.
-- **you can add me to the repository where your tests live.** We can get a SoW and NDA in place easily enough, but ultimately the work will look like adding me to the necessary github repository and CircleCI, and I'll take it from there. 
-- **You're willing to talk with me about it a bit** I might have some questions, and might open up a GitHub issue, or DM you in Slack|Twitter|Discord|whatever. 
-- **You're not obsessing too much about this** If you're really nervous about parting with your money need me to turn your payroll into a few million dollars of valuation, maybe it's not a good fit right now. Once I've iterated on this a few times, it'll be a much more robust service/offering, and _then_ we should talk! Punch your email in below, and you'll get updates as I go!
-
-<script async data-uid="518bab5f60" src="https://josh-thompson.ck.page/518bab5f60/index.js"></script>
-
 
 ### What if you don't make my tests go faster?
 
 I'll give you half of the money back! (but not all of it, of course. My time has value)
 
+### How long will it take for you to finish?
 
-## Could we also hire you for other development work?
+Once payment is finished, you'll add me to your organization's github repo, and provision me with enough access to run the tests locally. I'll do my work, and will open a PR fairly quickly in the process where we'll land the benchmarking & profiling results, fixes, etc. 
 
-I'd sorta rather not. But maybe! 
 
-If your company is too big/process heavy to support this exact mechanism (an easy $4900 charge + github access), there's other working arrangements we can explore, but it's still best to funnel through the $4900 audit and profile option, and *then* explore if additional work arrangements make sense.
+### How'd you arrive at the price? Aren't you supposed to have tiers?
 
-### $4900? Isn't that a little cheap? 
+Yep, some pricing strategies say 'have tiers'. Instead I'll anchor the price with the cost of hiring/onboarding a full-time engineer, and then getting them started with the bug-fixing, then feature work. You've got urgent work for your team, no one is thrilled to put one of them intensely on 'developer happiness' projects.
 
-It is! A normal full-time engineer might cost you $15-25k/month, and can be tens of thousands of dollars spent before their first useful PR, and it's time consuming for everyone to find and hire that person. 
+So, even after spending $60,000 in payroll, you might still not find it easy to get some performance work done. Big app or small, many engineers or three, there's a strong business case to be made. I'd love to have a phone call (actuall phone calls/whatsapp calls preferred) to discuss it more. I've found that a single phone conversation is a great use of time, then we can kick it off and i can take it from there. 
 
-Those hires can be REALLY great, but I offer dramatically reduced effort/cost, with the upside of  without displacing any of the work you/your team already has on deck. 
+Theoretically I could offer the work for less, I suppose, and I have done so in the past, but the price has gone up, probably will keep doing so. The 'cheaper' option would be [a small written guide](https://www.intermediateruby.com/how-to-audit-and-improve-your-ruby-rails-test-suite).
 
-I don't think I'll leave the cost so low for long, and it's been even lower in the past. 
 
 ### $4900? Isn't that a little expensive?
 
-The average full-time software developer costs the company in the ballpark of $15-20k/mo, and then needs to be interviewed, hired, onboarded. All of that costs money, of course, and lots of time.
+The average full-time software developer costs the company in the ballpark of $15-20k/mo, and then needs to be interviewed, hired, onboarded. All of that costs money, of course, but also time and energy, from quite a few different people.
 
 Buying this productized service at such a low cost is the kind of thing that you'll record as 'an easy win for the quarter'. Every engineer will be happy to have faster tests, _and_ to have not gotten performance work dropped in their lap at an inconvenient time. 
 
 I have an odd interest in performance work, and find it satisfying, and you get access to all the assorted experience and knowledge I've gained, doing this for many different companies/codebases.
 
-Tl;Dr; I'm basically giving this service away.
+tl;dr I'm basically giving this service away.
 
 ### I've got a super slow test suite, and I'd love for you to guaranteed that it'll be a lot faster when you're done
 
-I cannot guarantee it, but I can promise that you (and I!) will learn a lot through the process. [here's some of what I learned and achieved in the past](https://www.intermediateruby.com/how-to-audit-and-improve-your-ruby-rails-test-suite)
+I cannot guarantee it, but I can promise that you (and I!) will learn a lot through the process. [here's some of what I learned and achieved in the past](https://www.intermediateruby.com/how-to-audit-and-improve-your-ruby-rails-test-suite).
+
+If the test suite is so big it can only be run on circleCI, for example, that still can be made better, and we can get your monthly credit burn a bit lower. 
 
 ### Can I get that guide you're going to write when it's done?
 
@@ -181,4 +163,4 @@ Drop your email below, and I'll notify you when this project is done!
 
 ### I've got more questions. What to do?
 
-Leave a comment below. Hit me up on twitter. Email me at `josh@intermediateruby.com`.
+Leave a comment below. Hit me up on [twitter](https://twitter.com/josh_works). Email me at `josh@intermediateruby.com`.
