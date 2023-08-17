@@ -46,13 +46,11 @@ _I'm going to write a companion guide, documenting as much of what I can documen
 
 I'd like to do this 'Rails app test suite benchmark/profile/optimize on _your_ application! 
 
-Critically, however, _I might not be able to make your tests faster_, but I'll certainly try, and I'll give you great starting points that your team can continue to work on. 
+If your tests take 45 minutes, think of how nice it would be to cut that time by 30%. I don't promis results, but it's easy to imagine the benefits of faster tests. Your developers will thank you, and you'll feel a bit more confident about the deploy pipeline. Fail fast and all. 
 
-If your tests take 45 minutes, I don't know that they'll ever take just one minute, but think of how nice it would be to cut that time by twenty or thirty minutes!
+If your tests take 5 minutes, how nice would it be if they took just 2 minutes?
 
-If your tests take 5 minutes, how nice would it be if they took just 1.5 minutes?
-
-I'd like to help you, and get some practice doing this on a wide variety of applications, so I can build a guide to help other engineers figure this all out for themselves!
+I'd like to help you, and get some practice doing this on a wide variety of applications, so I can build a guide to help other engineers figure this all out for themselves! [This guide lives here for now](https://www.intermediateruby.com/how-to-audit-and-improve-your-ruby-rails-test-suite)
 
 So, hit the "buy now" button to book an audit. Once payment is complete, I'll reach out via email, and we'll get things going!
 
@@ -116,14 +114,9 @@ I think it'll be a good bit of fun. 😀
 
 ## FAQ
 
-
-### What if you don't make my tests go faster?
-
-I'll give you half of the money back! (but not all of it, of course. My time has value)
-
 ### How long will it take for you to finish?
 
-Once payment is finished, you'll add me to your organization's github repo, and provision me with enough access to run the tests locally. I'll do my work, and will open a PR fairly quickly in the process where we'll land the benchmarking & profiling results, fixes, etc. 
+Once I'm added to your organization's github repo, and provisioned with enough access to run the tests locally, I'll do my work, and will open a PR fairly quickly in the process where we'll land the benchmarking & profiling results, fixes, etc. 
 
 
 ### How'd you arrive at the price? Aren't you supposed to have tiers?
@@ -132,8 +125,17 @@ Yep, some pricing strategies say 'have tiers'. Instead I'll anchor the price wit
 
 So, even after spending $60,000 in payroll, you might still not find it easy to get some performance work done. Big app or small, many engineers or three, there's a strong business case to be made. I'd love to have a phone call (actuall phone calls/whatsapp calls preferred) to discuss it more. I've found that a single phone conversation is a great use of time, then we can kick it off and i can take it from there. 
 
-Theoretically I could offer the work for less, I suppose, and I have done so in the past, but the price has gone up, probably will keep doing so. The 'cheaper' option would be [a small written guide](https://www.intermediateruby.com/how-to-audit-and-improve-your-ruby-rails-test-suite).
+Theoretically I could offer the work for less, I suppose, and I have done so in the past, but the price has gone up, probably will keep doing so. The 'cheaper' option would be [a small written guide](https://www.intermediateruby.com/how-to-audit-and-improve-your-ruby-rails-test-suite). The more expensive option, lets call it $10k, a reasonable and round figure. 
 
+### Have you done non-test performance work?
+
+Yes, that's kinda where I got started, then moved sideways into tests. 
+
+A few years back, I gave a talk around rails app performance things, titled "Move Slow And Improve Things"
+
+The group laughs 8 times in the first 2.5 minutes, i'm proud. [It might be worth the click](https://www.youtube.com/watch?v=992Uyrheo24).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/992Uyrheo24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 ### $4900? Isn't that a little expensive?
 
@@ -164,3 +166,5 @@ Drop your email below, and I'll notify you when this project is done!
 ### I've got more questions. What to do?
 
 Leave a comment below. Hit me up on [twitter](https://twitter.com/josh_works). Email me at `josh@intermediateruby.com`.
+
+
